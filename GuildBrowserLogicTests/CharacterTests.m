@@ -19,6 +19,7 @@
     // 1
     NSDictionary *_characterDetailJson;
 	Character *_testGuy;
+
 }
 
 // 2
