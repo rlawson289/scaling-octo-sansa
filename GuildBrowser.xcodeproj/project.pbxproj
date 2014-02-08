@@ -221,6 +221,7 @@
 		CB9FDC3015E9872D00B3713E = {
 			isa = PBXGroup;
 			children = (
+				D4D0DBED18A6A96800275356 /* test-reports */,
 				CB9FDCEC15E9B31400B3713E /* images */,
 				CB9FDCC115E9A8DA00B3713E /* AFNetworking */,
 				CB9FDC4515E9872D00B3713E /* GuildBrowser */,
@@ -432,6 +433,13 @@
 				D4D0DBE818A6887C00275356 /* guild.json */,
 			);
 			path = testdata;
+			sourceTree = "<group>";
+		};
+		D4D0DBED18A6A96800275356 /* test-reports */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "test-reports";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
