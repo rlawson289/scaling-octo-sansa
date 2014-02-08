@@ -18,11 +18,14 @@
 {
     // 1
     NSDictionary *_characterDetailJson;
+	Character *_testGuy;
 }
 
 // 2
 -(void)setUp
 {
+	_testGuy = [[Character alloc] initWithCharacterDetailData:_characterDetailJson];
+
     // 3
     NSURL *dataServiceURL = [[NSBundle bundleForClass:self.class]
                              URLForResource:@"character" withExtension:@"json"];
