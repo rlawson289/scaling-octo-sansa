@@ -18,13 +18,13 @@
 {
     // 1
     NSDictionary *_characterDetailJson;
-	Character *_testGuy;
 
 }
 
 // 2
 -(void)setUp
 {
+	Character *_testGuy;
 	_testGuy = [[Character alloc] initWithCharacterDetailData:_characterDetailJson];
 
     // 3
@@ -66,6 +66,9 @@
 // 1
 -(void)testCreateCharacterFromDetailJsonProps
 {
+	Character *_testGuy;
+	_testGuy = [[Character alloc] initWithCharacterDetailData:_characterDetailJson];
+	
     STAssertEqualObjects(_testGuy.thumbnail, @"borean-tundra/171/40508075-avatar.jpg", @"thumbnail url is wrong");
     STAssertEqualObjects(_testGuy.name, @"Hagrel", @"name is wrong");
     STAssertEqualObjects(_testGuy.battleGroup, @"Emberstorm", @"battlegroup is wrong");
@@ -83,6 +86,9 @@
 // 2
 -(void)testCreateCharacterFromDetailJsonValidateItems
 {
+	Character *_testGuy;
+	_testGuy = [[Character alloc] initWithCharacterDetailData:_characterDetailJson];
+
     STAssertEqualObjects(_testGuy.neckItem.name,@"Stoneheart Choker", @"name is wrong");
     STAssertEqualObjects(_testGuy.wristItem.name,@"Vicious Pyrium Bracers", @"name is wrong");
     STAssertEqualObjects(_testGuy.waistItem.name,@"Girdle of the Queen's Champion", @"name is wrong");
